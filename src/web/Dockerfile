@@ -21,6 +21,7 @@ COPY --from=build /app/entrypoint.sh /bin
 COPY --from=build /app/build .
 COPY --from=build /app/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
+
 EXPOSE 80
 
 CMD ["/bin/sh", "-c", "/bin/entrypoint.sh -o /usr/share/nginx/html/env-config.js && nginx -g \"daemon off;\""]
