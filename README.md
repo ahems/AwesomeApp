@@ -46,4 +46,3 @@ REACT_APP_APPLICATIONINSIGHTS_CONNECTION_STRING <your connection string>
 From the `\src\web' Folder:
 npm ci
 npm start
-
